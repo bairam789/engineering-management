@@ -1,0 +1,87 @@
+.header {
+  padding: 2.625rem 0 2.063rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $white;
+  border-bottom: 0.063rem solid $dark-jungle-green;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-link {
+      img {
+        width: 9.313rem;
+        height: 3.125rem;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-self: center;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      gap: 3.313rem;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      gap: 3.313rem;
+
+      a {
+        font-size: 1.5rem;
+        font-family: "Actay Wide", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 1.875rem 0 1.563rem 0;
+
+    &__container {
+      &-link {
+        img {
+          width: 7.438rem;
+          height: 2.5rem;
+        }
+      }
+    }
+
+    &__nav {
+      &-item {
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .header {
+    padding: 1.5rem 0;
+
+    &__nav {
+      display: none;
+    }
+
+    .burger__btn {
+      display: block;
+    }
+  }
+}

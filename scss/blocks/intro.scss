@@ -1,0 +1,150 @@
+.intro {
+  padding: 11.938rem 0 3.438rem 0;
+  background: url(#{$base-url}/assets/icons/intro-technology-line.svg), url(#{$base-url}/assets/icons/intro-future-line.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -5rem bottom 22rem, right 6rem  bottom 15.5rem;
+  background-size: 30.688rem 5.625rem, 30.688rem 5.625rem;
+  
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4.813rem;
+
+ 
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.813rem;
+     
+
+
+    }
+
+    &-title {
+      font-family: "NEXT ART", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      
+    }
+
+    &-first {
+      padding-left: 7.75rem;
+font-size: 4rem;
+margin-bottom: 0.5rem;
+    }
+
+    &-second {
+      font-size: 5.063rem;
+      padding-left: 25.438rem;
+      background: linear-gradient(to right, $palatinate-blue, $purple-iris);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+    }
+
+    &-last {
+      font-size: 5.063rem;
+      padding-left: 14.25rem;
+      margin-bottom: 4.813rem;
+    }
+  }
+
+  &__title {
+    font-family: "Grandis Extended", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro {
+    padding: 8.875rem 0 2.5rem 0;
+    background: url(#{$base-url}/assets/icons/intro-technology-line-tablet.svg), url(#{$base-url}/assets/icons/intro-future-line-tablet.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -5rem bottom 13.8rem, right -2rem bottom 8.375rem;
+    background-size: 28.75rem 3.9rem, 30.625rem 3.75rem;
+    
+  
+    &__container {
+      gap: 1.563rem;
+  
+      &-text {
+        gap: 1.563rem;
+       
+  
+  
+      }
+  
+      &-first {
+        padding-left: 5.188rem;
+  font-size: 3rem;
+      }
+  
+      &-second {
+        font-size: 4rem;
+        padding-left: 19.625rem;
+    margin-bottom: 0.25rem;
+      }
+  
+      &-last {
+        font-size: 4rem;
+        padding-left: 6.938rem;
+        margin-bottom: 2.438rem;
+      }
+    }
+  
+    &__title {
+      font-size: 1.5rem;
+      
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .intro {
+    padding: 8.688rem 0 1.563rem 0;
+    background: url(#{$base-url}/assets/icons/intro-technology-line-tablet.svg), url(#{$base-url}/assets/icons/intro-future-line-tablet.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -15rem bottom 9.3rem, right -15rem bottom 6.5rem;
+    background-size: 28.75rem 2.188rem, 30.625rem 2.1rem;
+
+    
+  
+    &__container {
+      gap: 1.563rem;
+  
+      &-text {
+        gap: 0.813rem;
+       
+  
+  
+      }
+  
+      &-first {
+        padding-left: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.313rem;
+      }
+  
+      &-second {
+        font-size: 1.813rem;
+        padding-left: 3.125rem;
+      }
+  
+      &-last {
+        font-size: 1.813rem;
+        padding-left: 1.438rem;
+        margin-bottom: 1.563rem;
+      }
+    }
+  
+    &__title {
+      font-size: 1rem;
+      text-align: center;
+      
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/header.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/burger.scss';
+@import 'blocks/programm.scss';
+@import 'blocks/about.scss';
+@import 'blocks/career.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/directions.scss';
+@import 'blocks/whom.scss';
+@import 'blocks/grant.scss';
+@import 'blocks/admission.scss';
+@import 'blocks/credit.scss';
+@import 'blocks/partners.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/footer.scss';

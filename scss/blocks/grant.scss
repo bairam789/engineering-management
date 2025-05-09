@@ -1,0 +1,134 @@
+.grant {
+  padding: 3.813rem 0 5.375rem 0;
+  background: url(#{$base-url}/assets/img/student-grant.png) no-repeat;
+  background-size: 33rem 22.813rem;
+  background-position: right 3rem bottom 5.375rem;
+
+  &__container {
+    max-width: 39.625rem;
+
+    &-title {
+      font-family: "Grandis Extended", sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 3.813rem;
+      margin-bottom: 1.125rem;
+      color: $violet-blue;
+    
+    }
+
+    &-paragraph {
+      font-family:  "Unbounded", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin-bottom: 2.625rem;
+    }
+
+    &-span {
+      font-weight: 700;
+      font-size: 2rem;
+      color: $violet-blue;
+    }
+
+    &-wrap {
+      display: flex;
+        align-items: center;
+      @include btn($violet-blue, $white, 2.25rem, 0.531rem ,11.406rem, 0.931rem, 11.406rem, 6.25rem);
+      font-family: "Gilroy", sans-serif;
+
+    }
+
+    &-btn {
+      padding-bottom: 0.1rem;
+      border-bottom: 0.063rem solid $white;
+      margin: 0 auto;
+      color: $white;
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .grant {
+    padding: 4.75rem 0 4.375rem 0;
+    background: url(#{$base-url}/assets/img/student-grant.png) no-repeat;
+    background-size: 25rem 17.375rem;
+    background-position: right 2.5rem bottom 4.375rem;
+  
+    &__container {
+      max-width: 27.938rem;
+  
+      &-title {
+        font-size: 2.25rem;
+        line-height: 2.875rem;
+        margin-bottom: 1.25rem;
+      
+      }
+  
+      &-paragraph {
+        font-size: 1rem;
+        margin-bottom: 2.188rem;
+      }
+  
+      &-span {
+        font-size: 1.4rem;
+      }
+  
+      &-wrap {
+        @include btn($violet-blue, $white, 1.25rem, 0.969rem ,9.219rem, 0.969rem, 9.219rem, 6.25rem);
+  
+      }
+  
+      &-btn {
+        padding-bottom: 0.1rem;
+        border-bottom: 0.063rem solid $white;
+        margin: 0 auto;
+        color: $white;
+      }
+    }
+  
+  }
+}
+
+@media (max-width: 460px) {
+  .grant {
+    padding: 1.938rem 0 15.75rem 0;
+    background: url(#{$base-url}/assets/img/student-grant.png) no-repeat;
+    background-size: 20.375rem 13.688rem;
+    background-position: center bottom 1rem;
+  
+    &__container {
+      max-width: 100%;
+  
+      &-title {
+        font-size: 1.5rem;
+        line-height: 1.938rem;
+        margin-bottom: 1rem;
+      
+      }
+  
+      &-paragraph {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+      }
+  
+      &-span {
+        font-size: 1rem;
+      }
+  
+      &-wrap {
+        @include btn($violet-blue, $white, 1.25rem, 0.906rem ,5.906rem, 0.906rem, 5.906rem, 6.25rem);
+        margin-bottom: 1rem;
+  
+      }
+  
+      &-btn {
+        padding-bottom: 0.1rem;
+        border-bottom: 0.063rem solid $white;
+        margin: 0 auto;
+        color: $white;
+      }
+    }
+  
+  }
+}

@@ -1,0 +1,109 @@
+.admission {
+  padding: 3.688rem 0 2.875rem 0;
+  background: linear-gradient(to bottom left, $palatinate-blue, $purple-iris);
+  border-bottom: 0.25rem solid $white;
+
+  &__title {
+    font-family:  "Unbounded", sans-serif;
+    font-size: 3.438rem;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+    margin-bottom: 1.813rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.813rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+
+    h3 {
+      color: $white;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p {
+      width: 100%;
+      padding: 1rem 2.5rem;
+      font-size: 2rem;
+      font-weight: 600;
+      color: $dark-jungle-green;
+      background-color: $white;
+      border-radius: 6.25rem;
+
+      a {
+        text-decoration: underline;
+        color: $palatinate-blue;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .admission {
+    padding: 2.75rem 0 2.563rem 0;
+    border-bottom: 0.25rem solid $white;
+  
+    &__title {
+      font-size: 2.25rem;
+      margin-bottom: 2.563rem;
+    }
+  
+    &__list {
+      gap: 2.563rem;
+    }
+  
+    &__item {
+  
+      p {
+        width: 100%;
+        padding: 1rem 2.5rem;
+        font-size: 1.25rem;
+      }
+    }
+  
+  }
+}
+
+@media (max-width: 460px) {
+  .admission {
+    padding: 2rem 0 1.875rem 0;
+    border-bottom: 0.063rem solid $white;
+  
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 1.875rem;
+    }
+  
+    &__list {
+      gap: 1.313rem;
+    }
+  
+    &__item {
+      gap: 1rem;
+
+      h3 {
+        font-size: 1.25rem;
+      }
+  
+      p {
+        width: 100%;
+        padding: 1rem 1.406rem;
+        font-size: 1rem;
+        line-height: 1.188rem;
+        border-radius: 1.688rem;
+      }
+    }
+  
+  }
+}

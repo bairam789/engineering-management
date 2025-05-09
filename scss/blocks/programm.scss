@@ -1,0 +1,99 @@
+.programm {
+  position: relative;
+  padding: 5.25rem 0;
+  background: linear-gradient(to bottom right, $palatinate-blue, $purple-iris);
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(#{$base-url}/assets/icons/programm-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -3.5rem bottom 0rem;
+    width: 39.625rem;
+    height: 19.813rem;
+    bottom: 3.313rem;
+    border-radius: 9.938rem 0 0 9.938rem;
+    right: 0;
+  }
+
+
+  &__text {
+    color: $white;
+    font-size: 2.25rem;
+    width: 40rem;
+    line-height: 2.688rem;
+    font-weight: 600;
+  }
+
+  &__text-span {
+    color: $white;
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .programm {
+    position: relative;
+    padding: 4.438rem 0 4.563rem 0;
+  
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url(#{$base-url}/assets/icons/programm-background.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right -3.5rem bottom 0rem;
+      width: 30.75rem;
+      height: 15.375rem;
+      bottom: 2.313rem;
+      right: 0;
+    }
+  
+  
+    &__text {
+      font-size: 1.5rem;
+      width: 31rem;
+      line-height: 1.813rem;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .programm {
+    position: relative;
+    padding: 1.313rem 0 6.438rem 0;
+  
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url(#{$base-url}/assets/icons/programm-backgroung-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0;
+      background-position: center;
+      width: 20.688rem;
+      height: 6.438rem;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+  
+    &__text {
+      font-size: 1rem;
+      width: 100%;
+      line-height: 1.188rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+
+      
+    }
+
+    &__text-span {
+      display: block;
+      margin-bottom: 1.063rem;
+    }
+  }
+}

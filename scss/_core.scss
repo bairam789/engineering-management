@@ -1,0 +1,116 @@
+body {
+  font-family: 'TT Travels', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%
+}
+
+.container { 
+  @include min-max(320px, 100%); 
+}
+
+
+.wrap {
+  @include min-max(320px, 1440px);
+  width: 100%;
+  padding: 0 9.188rem;
+  box-sizing: border-box;
+}
+
+.intro-wrap {
+  padding: 0 2.781rem;
+}
+
+
+body, 
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: 'Grandis Extended';
+  font-weight: 700;
+  color: $dark-jungle-green;
+}
+
+
+p, 
+span,
+a {
+  color: $dark-jungle-green;
+  font-family: 'TT Travels', sans-serif;
+}
+
+a {
+  text-decoration: none;
+ 
+}
+
+@media (max-width: 1320px) {
+  html {
+    font-size: 85%
+  }
+}
+
+@media (max-width: 1130px) {
+  html {
+    font-size: 75%
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 0 5.938rem;
+  }
+
+  .intro-wrap {
+    padding: 0 2.781rem;
+  }
+
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 880px) {
+html {
+  font-size: 75%;
+}
+}
+
+@media (max-width: 730px) {
+  html {
+    font-size: 55%;
+  }
+  }
+
+  @media (max-width: 540px) {
+    html {
+      font-size: 45%;
+    }
+    }
+
+@media (max-width: 460px) {
+  html {
+    font-size: 100%;
+  }
+  .wrap {
+    padding: 0 1.375rem;
+  }
+
+  .intro-wrap {
+    padding: 0 1.375rem;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+

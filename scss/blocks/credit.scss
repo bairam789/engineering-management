@@ -1,0 +1,57 @@
+.credit {
+  padding: 2.859rem 0 4.563rem 0;
+  background: linear-gradient(to top left, $palatinate-blue, $purple-iris);
+
+  p {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2.875rem;
+    color: $white;
+  }
+
+  a {
+    @include btn($white, $dark-jungle-green, 2.25rem, 0.531rem, 6.344rem, 0.531rem, 6.344rem, 6.25rem);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    width: 28.5rem;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1024px) {
+  .credit {
+    padding: 3.25rem 0;
+  
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1.813rem;
+      line-height: 1.813rem
+    }
+  
+    a {
+      @include btn($white, $dark-jungle-green, 1.25rem, 0.5rem, 6.313rem, 0.5rem, 6.313rem, 6.25rem);
+      width: 21.438rem;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .credit {
+    padding: 1.563rem 1.375rem 2rem 1.375rem;
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5rem
+    }
+  
+    a {
+      @include btn($white, $dark-jungle-green, 1rem, 0.406rem, 5.344rem, 0.406rem, 5.344rem, 6.25rem);
+      width: 100%;
+    }
+  }
+}

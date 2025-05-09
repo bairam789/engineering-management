@@ -897,7 +897,7 @@ a {
 @media (max-width: 460px) {
   .advantages {
     padding: 3rem 0 2.813rem 0;
-    background: url(/engineering-management=/assets/img/paper-background-mobile.png) no-repeat;
+    background: url(/engineering-management/assets/img/paper-background-mobile.png) no-repeat;
     background-size: cover;
   }
   .advantages__title {
